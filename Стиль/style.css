@@ -79,6 +79,7 @@ section{
 main{
 	flex: 1 0 auto;
 }
+
 .preloader{
     z-index: 52;
     background: #c5c5c5;
