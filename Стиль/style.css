@@ -79,6 +79,81 @@ section{
 main{
 	flex: 1 0 auto;
 }
+.preloader{
+    z-index: 52;
+    background: #c5c5c5;
+    color: #414141;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.preloader__anim{
+    transform: translateY(-50%);
+    display: flex;
+    /* background: red; */
+    align-items: flex-end;
+}
+.preloader._un_active{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.gooey{
+    
+    /* width: 142px;
+    height: 40px;
+    margin: -20px 0 0 -71px; */
+    /* background: white; */
+    filter: contrast(0);
+}
+
+.dot{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 3px;
+    left: 4px;
+    filter: blur(0px);
+    background: #414141;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dote 2.8s infinite;
+}
+.dots{
+    transform: translateX(0);
+    margin-top: 3px;
+    margin-left: 8px;
+    animation: dots 2.8s infinite;
+}
+.dots span{
+    display: block;
+    float: left;
+    width: 4px;
+    height: 4px;
+    margin-left: 4px;
+    filter: blur(0px);
+    background: #414141;
+    border-radius: 50%;
+}
+
+@keyframes dote{
+    50%{
+        transform: translateX(20px);
+    }
+}
+@keyframes dots{
+    50%{
+        transform: translateX(-6px);
+    }
+}
+
 
 /*----------header-----------------*/
 header{
